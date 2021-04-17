@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    background-color: #f3f5f7;
+}
+.w {
+  width: 1200px;
+  margin: auto;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.header {
+  height: 42px;
+  /* 注意此处会层叠w里的margin */
+  margin: 30px auto;
+}
+.logo {
+    float: left;
+    width: 198px;
+    height: 42px;
+}
+
+.nav {
+    float: left;
+    /* 没有给导航栏加宽度因为导航的个数可能后期增加
+    而既然加了浮动那它的默认宽度由内容决定 */
+    margin-left: 60px;
+}
+.nav ul li {
+    float: left;
+    margin: 0 15px;
+}
+.nav ul li a {
+    display: inline-block;
+    height: 42px;
+    padding: 0 10px;
+    font-size: 18px;
+    color: black;
+    line-height: 42px;
+}
+.nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+    color: #00a4ff;
+}
+.search {
+    float: left;
+    width: 412px;
+    height: 42px;
+    margin-left: 70px;
+    background-color: skyblue;
+}
+.search input {
+    float: left;
+    width: 345px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    padding-left: 15px;
+    border-right: none;
+    font-size: 14px;
+    color: #bfbfbf;
+}
+.search button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    border: 0;
+    background: url(images/btn.png);
+
+}
+.user {
+    float: right;
+    height: 42px;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #666;
+    line-height: 42px;
+}
+.banner {
+    height: 421px;
+    background-color: #1c036c;
+}
+.banner .w {
+    height: 421px;
+    background: url(images/banner2.jpg) no-repeat top center;
+}
+.subnav {
+    float: left;
+    width: 190px;
+    height: 421px;
+    background:rgba(0, 0, 0, 0.3);
+}
+.subnav ul li a {
+    display: block;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 45px;
+}
+.subnav ul li a span {
+    float: right;
+}
+.subnav ul li a:hover {
+    color: #00a4ff;
+}
+.course {
+    float: right;
+    width: 230px;
+    height: 300px;
+    /* 浮动的盒子不会有外边距合并的问题 */
+    margin-top: 50px;
+    background-color: #fff;
+}
+.course h1 {
+    height: 48px;
+    background-color: #9bceea;
+    font-size: 18px;
+    color: #fff;
+    line-height: 48px;
+    text-align: center;
+}
+.bd {
+    padding: 0 20px;
+}
+.bd ul li {
+   padding: 14px 0;
+   border-bottom: 1px solid #ccc;
+}
+.bd ul li h4 {
+    font-size: 16px;
+    color: #4e4e4e;
+}
+.bd ul li p {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+.bd a {
+    display: block;
+    height: 38px;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #00a4ff;
+    line-height: 38px;
+    text-align: center;
+    border: 1px solid #00a4ff;
+}
+.goods {
+    height: 60px;
+    margin-top: 10px;
+    /* 行高可以继承 */
+    line-height: 60px;
+    box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.goods h3 {
+    float: left;
+    padding:0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #00a4ff;
+}
+.goods ul {
+    float: left;
+}
+.goods ul li {
+    float: left;
+    /* 若给li添加border-left则边框过长，因为li的高度由line-height决定，为60px */
+    /* border-left: 1px solid #ccc; */
+}
+.goods ul li a {
+    padding: 0 30px;
+    font-size: 16px;
+    color: #050505;
+    border-left: 1px solid #ccc;
+
+}
+
+.goods .mood {
+    float: right;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #00a4ff;
+}
+.box {
+    margin-top: 30px;
+}
+.box-hd {
+    height: 45px;
+}
+.box-hd h3 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+}
+.box-hd a {
+    float: right;
+    margin-top: 10px;
+    margin-right: 30px;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+.box-bd ul {
+    overflow: hidden;
+    width: 1225px;
+}
+.box-bd ul li {
+    float: left;
+    width: 228px;
+    height: 270px;
+    margin-right: 15px;
+    margin-bottom:15px;
+    background-color: #fff;
+}
+.box-bd ul li img {
+    width: 100%;
+}
+.box-bd ul li h4 {
+    margin: 20px 20px 20px 25px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #050505;
+}
+.box-bd ul li p {
+    margin: 0 20px 0 25px;
+    font-size: 12px;
+    color: #999;
+}
+.box-bd ul li p span {
+    color: #ff7c2d;
+}
+.footer {
+    height: 415px;
+    /* padding-top: 35px;会撑大盒子 */
+    background-color: palegoldenrod;
+}
+.footer .w {
+    /* margin-top: 35px;会引起外边距合并 */
+    padding-top: 35px;
+}
+.footer .w .copyright {
+    float: left;
+}
+.footer .w .copyright p {
+    margin:20px 0 15px 0;
+    font-size: 12px;
+    color: #666;
+
+}
+.footer .w .copyright a {
+    display: block;
+    width: 118px;
+    height: 33px;
+    border: 1px solid #00a4ff;
+    font-size: 16px;
+    color: #00a4ff;
+    line-height: 33px;
+    text-align: center;
+
+}
+.footer .w .links {
+    float: right;
+}
+.footer .w .links dl {
+    float: right;
+    margin-left: 100px;
+}
+.footer .w .links dt {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+.footer .w .links dd a {
+    font-size: 12px;
+    color: #333;
+}
